@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>August &amp; Oak — Considered Living, Well Made</title>
+<meta name="description" content="August & Oak is a home goods store offering considered furniture, ceramics, textiles and lighting made to last.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="loader" id="loader">
+  <div class="loader-mark">A&amp;O</div>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<div class="toast-stack" id="toastStack" aria-live="polite"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-top">
+    <div class="container header-top-inner">
+      <p>Complimentary shipping on orders over $150 · Considered returns within 30 days</p>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container header-main-inner">
+      <button class="icon-btn nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a href="#top" class="brand">
+        <span class="brand-mark">A&amp;O</span>
+        <span class="brand-name">August &amp; Oak</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#categories">Shop</a></li>
+          <li><a href="#new-arrivals">New Arrivals</a></li>
+          <li><a href="#best-sellers">Best Sellers</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="search-box">
+          <input type="search" id="searchInput" placeholder="Search products…" aria-label="Search products">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 21l-4.35-4.35m1.35-5.15a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <button class="icon-btn" id="wishlistToggle" aria-label="View wishlist">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21s-7.5-4.7-10-9.3C.4 8 2 4 6 4c2.2 0 3.9 1.3 6 3.6C14.1 5.3 15.8 4 18 4c4 0 5.6 4 4 7.7C19.5 16.3 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          <span class="badge" id="wishlistCount">0</span>
+        </button>
+        <button class="icon-btn" id="cartToggle" aria-label="Open shopping cart" aria-controls="cartSidebar" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3 4h2l2.2 12.2A2 2 0 009.2 18h7.6a2 2 0 002-1.6L20.5 8H6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="21" r="1.4" fill="currentColor"/><circle cx="17" cy="21" r="1.4" fill="currentColor"/></svg>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <div class="mobile-nav-inner">
+    <div class="mobile-search">
+      <input type="search" id="mobileSearchInput" placeholder="Search products…" aria-label="Search products">
+    </div>
+    <ul>
+      <li><a href="#categories">Shop</a></li>
+      <li><a href="#new-arrivals">New Arrivals</a></li>
+      <li><a href="#best-sellers">Best Sellers</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+<div class="scrim" id="scrim"></div>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy fade-in">
+        <p class="eyebrow">Autumn Collection — 2026</p>
+        <h1>Furnish the hours<br>you actually live in.</h1>
+        <p class="hero-sub">Solid oak, hand-thrown ceramics and washed linen — pieces built to hold a decade of ordinary mornings, not a season of trends.</p>
+        <div class="hero-actions">
+          <a href="#categories" class="btn btn-primary">Shop the collection</a>
+          <a href="#new-arrivals" class="btn btn-outline">See what's new</a>
+        </div>
+      </div>
+      <div class="hero-visual fade-in">
+        <div class="hero-frame">
+          <img src="https://picsum.photos/seed/augustoak-hero/900/1100" alt="A warm, minimal living room styled with oak furniture and linen textiles" loading="eager">
+        </div>
+        <div class="hero-tag">
+          <span class="hero-tag-label">This week</span>
+          <span class="hero-tag-value">Up to 30% off lighting</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="section-head fade-in">
+        <p class="eyebrow">Shop by category</p>
+        <h2>Find your material</h2>
+      </div>
+      <div class="category-row fade-in" id="categoryRow"></div>
+    </div>
+  </section>
+
+  <section class="products" id="featured">
+    <div class="container">
+      <div class="section-head fade-in">
+        <p class="eyebrow">Featured</p>
+        <h2>The full collection</h2>
+      </div>
+
+      <div class="toolbar fade-in">
+        <div class="toolbar-group" role="group" aria-label="Filter by category">
+          <button class="chip is-active" data-filter-cat="all">All</button>
+          <button class="chip" data-filter-cat="Lighting">Lighting</button>
+          <button class="chip" data-filter-cat="Ceramics">Ceramics</button>
+          <button class="chip" data-filter-cat="Textiles">Textiles</button>
+          <button class="chip" data-filter-cat="Furniture">Furniture</button>
+          <button class="chip" data-filter-cat="Decor">Decor</button>
+          <button class="chip" data-filter-cat="Bath &amp; Body">Bath &amp; Body</button>
+        </div>
+        <div class="toolbar-group toolbar-selects">
+          <label class="select-wrap">
+            <span>Price</span>
+            <select id="priceFilter">
+              <option value="all">Any price</option>
+              <option value="0-40">Under $40</option>
+              <option value="40-80">$40 – $80</option>
+              <option value="80-150">$80 – $150</option>
+              <option value="150-9999">$150 and up</option>
+            </select>
+          </label>
+          <label class="select-wrap">
+            <span>Sort</span>
+            <select id="sortSelect">
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price: low to high</option>
+              <option value="price-desc">Price: high to low</option>
+              <option value="rating">Highest rated</option>
+              <option value="name">Name: A to Z</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <p class="results-meta" id="resultsMeta" aria-live="polite"></p>
+      <div class="product-grid fade-in" id="featuredGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>No pieces match those filters just yet. Try widening your search.</p>
+    </div>
+  </section>
+
+  <section class="products alt" id="new-arrivals">
+    <div class="container">
+      <div class="section-head split fade-in">
+        <div>
+          <p class="eyebrow">Just landed</p>
+          <h2>New arrivals</h2>
+        </div>
+        <p class="section-note">Restocked and freshly designed, in from the workshop this month.</p>
+      </div>
+      <div class="product-grid" id="newArrivalsGrid"></div>
+    </div>
+  </section>
+
+  <section class="products" id="best-sellers">
+    <div class="container">
+      <div class="section-head split fade-in">
+        <div>
+          <p class="eyebrow">Customer favorites</p>
+          <h2>Best sellers</h2>
+        </div>
+        <p class="section-note">The pieces our customers reorder, gift, and recommend most.</p>
+      </div>
+      <div class="product-grid" id="bestSellersGrid"></div>
+    </div>
+  </section>
+
+  <section class="banner-strip fade-in">
+    <div class="container banner-strip-inner">
+      <div class="banner-item">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M3 12l3-8h12l3 8M3 12v7a1 1 0 001 1h16a1 1 0 001-1v-7M3 12h18" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+        <div><strong>Free shipping</strong><span>On every order over $150</span></div>
+      </div>
+      <div class="banner-item">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M12 2l2.6 6.2L21 9l-5 4.5L17.4 21 12 17.4 6.6 21 8 13.5 3 9l6.4-.8z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        <div><strong>Made to last</strong><span>Solid materials, lifetime care guide</span></div>
+      </div>
+      <div class="banner-item">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M4 4h16v13H8l-4 4z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        <div><strong>Considered returns</strong><span>30 days, no questions asked</span></div>
+      </div>
+      <div class="banner-item">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M12 21s-7.5-4.7-10-9.3C.4 8 2 4 6 4c2.2 0 3.9 1.3 6 3.6C14.1 5.3 15.8 4 18 4c4 0 5.6 4 4 7.7C19.5 16.3 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+        <div><strong>Small batch</strong><span>Made with independent makers</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container newsletter-inner fade-in">
+      <div class="newsletter-copy">
+        <p class="eyebrow">Stay in the loop</p>
+        <h2>Notes from the workshop, in your inbox</h2>
+        <p>New arrivals, restocks and the occasional discount — once or twice a month, never more.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm" novalidate>
+        <label for="newsletterEmail" class="sr-only">Email address</label>
+        <input type="email" id="newsletterEmail" placeholder="you@email.com" autocomplete="email" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+        <p class="form-error" id="newsletterError" role="alert"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-head fade-in">
+        <p class="eyebrow">In their words</p>
+        <h2>What customers are saying</h2>
+      </div>
+      <div class="testimonial-viewport fade-in">
+        <button class="testimonial-nav prev" id="testiPrev" aria-label="Previous testimonial">‹</button>
+        <div class="testimonial-track" id="testimonialTrack"></div>
+        <button class="testimonial-nav next" id="testiNext" aria-label="Next testimonial">›</button>
+      </div>
+      <div class="testimonial-dots" id="testimonialDots"></div>
+    </div>
+  </section>
+
+  <section class="brands fade-in">
+    <div class="container">
+      <p class="brands-label">As featured alongside</p>
+      <div class="brands-row" id="brandsRow"></div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="container faq-inner">
+      <div class="section-head fade-in">
+        <p class="eyebrow">Good to know</p>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="accordion fade-in" id="accordion"></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container contact-inner fade-in">
+      <div class="contact-copy">
+        <p class="eyebrow">Get in touch</p>
+        <h2>We read every message</h2>
+        <p>Questions about an order, a piece, or a bulk enquiry — our small team replies within one working day.</p>
+        <ul class="contact-details">
+          <li><strong>Email</strong><span>hello@augustandoak.com</span></li>
+          <li><strong>Phone</strong><span>+1 (555) 019 2847</span></li>
+          <li><strong>Studio</strong><span>214 Kiln Street, Portland, OR</span></li>
+        </ul>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="contactName">Name</label>
+            <input type="text" id="contactName" required>
+          </div>
+          <div class="field">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="contactSubject">Subject</label>
+          <input type="text" id="contactSubject" required>
+        </div>
+        <div class="field">
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col footer-brand">
+      <a href="#top" class="brand">
+        <span class="brand-mark">A&amp;O</span>
+        <span class="brand-name">August &amp; Oak</span>
+      </a>
+      <p>Considered home goods, made with independent workshops across North America and Northern Europe.</p>
+      <div class="social-row">
+        <a href="#" aria-label="Instagram" class="icon-btn small"><svg viewBox="0 0 24 24" width="16" height="16"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="Pinterest" class="icon-btn small"><svg viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M9 17c1-3 1.5-5.6 1.5-7.4A2.6 2.6 0 0113 7c1.6 0 2.6 1.2 2.6 2.7 0 2-1.2 4.6-2.7 4.6-.8 0-1.4-.6-1.2-1.5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+        <a href="#" aria-label="Facebook" class="icon-btn small"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M14 21v-7h2.3l.4-3H14V9c0-.9.2-1.5 1.5-1.5H17V5c-.3 0-1.2-.1-2.2-.1-2.2 0-3.8 1.3-3.8 3.8V11H8.5v3H11v7z" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+    <nav class="footer-col" aria-label="Shop">
+      <h3>Shop</h3>
+      <ul>
+        <li><a href="#categories">All categories</a></li>
+        <li><a href="#new-arrivals">New arrivals</a></li>
+        <li><a href="#best-sellers">Best sellers</a></li>
+        <li><a href="#featured">Gift cards</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-col" aria-label="Help">
+      <h3>Help</h3>
+      <ul>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Shipping &amp; returns</a></li>
+        <li><a href="#contact">Track an order</a></li>
+        <li><a href="#contact">Care guide</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-col" aria-label="Company">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="#top">Our story</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Wholesale</a></li>
+        <li><a href="#contact">Careers</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col">
+      <h3>Payment methods</h3>
+      <div class="payment-row">
+        <span>Visa</span><span>Mastercard</span><span>Amex</span><span>PayPal</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>&copy; 2026 August &amp; Oak Home Goods Co. All rights reserved.</p>
+      <ul>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Terms of service</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<div class="scrim" id="cartScrim"></div>
+<aside class="cart-sidebar" id="cartSidebar" aria-label="Shopping cart" aria-hidden="true">
+  <div class="cart-header">
+    <h2>Your cart</h2>
+    <button class="icon-btn" id="cartClose" aria-label="Close cart">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-empty" id="cartEmpty">
+    <p>Your cart is empty.</p>
+    <a href="#categories" class="btn btn-outline" id="cartEmptyLink">Start shopping</a>
+  </div>
+  <div class="cart-footer" id="cartFooter">
+    <div class="cart-line">
+      <span>Subtotal</span>
+      <span id="cartSubtotal">$0.00</span>
+    </div>
+    <div class="cart-line">
+      <span>Shipping</span>
+      <span id="cartShipping">Free</span>
+    </div>
+    <div class="cart-line total">
+      <span>Total</span>
+      <span id="cartTotal">$0.00</span>
+    </div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+
+<div class="scrim" id="modalScrim"></div>
+<div class="modal" id="quickViewModal" role="dialog" aria-modal="true" aria-label="Product quick view" aria-hidden="true">
+  <div class="modal-inner">
+    <button class="icon-btn modal-close" id="modalClose" aria-label="Close quick view">&times;</button>
+    <div class="modal-grid" id="modalContent"></div>
+  </div>
+</div>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>

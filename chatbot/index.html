@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FZ · Chat Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="chat-header">
+    <div class="header-identity">
+      <div class="avatar">A</div>
+      <div class="header-text">
+        <h1 class="bot-name">FZ </h1>
+        <p class="status"><span class="status-dot"></span>Online</p>
+      </div>
+    </div>
+    <button class="clear-btn" id="clearBtn" title="Clear conversation">Clear</button>
+  </header>
+
+  <main class="chat-window" id="chatWindow">
+  </main>
+
+  <div class="typing-indicator" id="typingIndicator">
+    <div class="typing-bubble">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <footer class="chat-input-area">
+    <input type="text" id="messageInput" class="message-input" placeholder="Type a message..." autocomplete="off">
+    <button class="send-btn" id="sendBtn" aria-label="Send message">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.4 20.6L21 12L3.4 3.4L3.4 10.2L15.8 12L3.4 13.8L3.4 20.6Z" fill="currentColor"/>
+      </svg>
+    </button>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
